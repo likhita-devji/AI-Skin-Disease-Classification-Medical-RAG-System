@@ -21,6 +21,9 @@ The application utilizes a modular AI pipeline:
 ## 🔹 CNN Based Skin Disease Classification
 ![CNN-Based Skin Disease Classification Flow](static/images/classification_flow_infographic.png)
 
+## 🔹 Medical RAG Pipeline Architecture
+![Medical RAG Pipeline Architecture](static/images/medical_rag_pipeline_infographic.png)
+
 ---
 
 ## 🔹 Technology Stack
@@ -75,7 +78,8 @@ The application utilizes a modular AI pipeline:
     ├── js/main.js
     └── images/
         ├── system_architecture_infographic.png
-        └── classification_flow_infographic.png
+        ├── classification_flow_infographic.png
+        └── medical_rag_pipeline_infographic.png
 ```
 
 ---
