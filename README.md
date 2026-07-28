@@ -16,14 +16,6 @@ The application utilizes a modular AI pipeline:
 - **RAG Pipeline**: Uses LangChain and ChromaDB to retrieve context from trusted medical PDFs.
 - **Inference Engine**: Generates safe, non-hallucinated responses via a local Ollama LLM.
 
-![AI Skin Disease Classification Medical RAG System Architecture](static/images/system_architecture_infographic.png)
-
-## 🔹 CNN Based Skin Disease Classification
-![CNN-Based Skin Disease Classification Flow](static/images/classification_flow_infographic.png)
-
-## 🔹 Medical RAG Pipeline Architecture
-![Medical RAG Pipeline Architecture](static/images/medical_rag_pipeline_infographic.png)
-
 ---
 
 ## 🔹 Technology Stack
@@ -73,13 +65,7 @@ The application utilizes a modular AI pipeline:
 ├── chroma_db/                     # Persistent Vector Store
 ├── uploads/                       # User Uploaded Images
 ├── templates/                     # Frontend UI (Jinja2)
-└── static/                        # CSS, JS, and Infographic Assets
-    ├── css/style.css
-    ├── js/main.js
-    └── images/
-        ├── system_architecture_infographic.png
-        ├── classification_flow_infographic.png
-        └── medical_rag_pipeline_infographic.png
+└── static/                        # CSS & JS Frontend Assets
 ```
 
 ---
