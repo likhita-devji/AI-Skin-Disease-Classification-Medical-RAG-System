@@ -1,0 +1,65 @@
+{
+  "akiec": {
+    "name": "Actinic Keratosis / Intraepithelial Carcinoma",
+    "category": "Pre-cancerous Lesion",
+    "severity": "Moderate - Needs Medical Evaluation",
+    "risk_level": "Medium",
+    "description": "Rough, scaly, or crusty skin patches caused by long-term sun exposure. Potential to develop into Squamous Cell Carcinoma if untreated.",
+    "symptoms": ["Rough scaly patch", "Pink, red, or brown coloration", "Itching or burning sensation", "Elevated hard surface"],
+    "immediate_advice": "Schedule an appointment with a dermatologist for evaluation. Avoid sun exposure and use SPF 50+ sunscreen."
+  },
+  "bcc": {
+    "name": "Basal Cell Carcinoma",
+    "category": "Malignant Skin Cancer",
+    "severity": "High - Requires Dermatologist Consultation",
+    "risk_level": "High",
+    "description": "The most common form of skin cancer. Arises in basal cells and typically presents as a pearly nodule, translucent bump, or non-healing sore.",
+    "symptoms": ["Pearly or waxy bump", "Flat flesh-colored or brown lesion", "Sore that bleeds, oozes, or crusts", "Visible blood vessels"],
+    "immediate_advice": "Consult a board-certified dermatologist promptly. Basal cell carcinoma is highly treatable when caught early."
+  },
+  "bkl": {
+    "name": "Benign Keratosis-like Lesion",
+    "category": "Non-Cancerous Lesion",
+    "severity": "Low - Generally Harmless",
+    "risk_level": "Low",
+    "description": "Includes seborrheic keratoses and solar lentigines. Non-cancerous skin growths that often appear waxy, scaly, or slightly raised.",
+    "symptoms": ["Waxy or pasted-on appearance", "Light tan to black shade", "Round or oval shape", "Slightly elevated surface"],
+    "immediate_advice": "These lesions are benign and usually do not require medical intervention unless inflamed or for cosmetic reasons."
+  },
+  "df": {
+    "name": "Dermatofibroma",
+    "category": "Benign Fibrous Nodule",
+    "severity": "Low - Benign",
+    "risk_level": "Low",
+    "description": "Common firm, harmless skin nodules, frequently found on lower legs. Usually dimple inward when pinched.",
+    "symptoms": ["Firm reddish-brown bump", "Pinch sign (dimples inward)", "Asymptomatic or slight tenderness", "Slow growing"],
+    "immediate_advice": "Dermatofibromas are non-malignant. Monitor for any sudden changes in size, color, or shape."
+  },
+  "mel": {
+    "name": "Melanoma",
+    "category": "Malignant Skin Cancer",
+    "severity": "Critical - Urgent Specialist Consultation",
+    "risk_level": "Critical",
+    "description": "The most serious type of skin cancer, developing in melanocytes. Follows the ABCDE criteria (Asymmetry, Border, Color, Diameter, Evolving).",
+    "symptoms": ["Asymmetrical lesion shape", "Irregular notched borders", "Varied color hues (black, brown, blue)", "Diameter larger than 6mm", "Evolving shape or size"],
+    "immediate_advice": "URGENT: Schedule an immediate evaluation with an oncologist or dermatologist. Do not scratch or attempt self-treatment."
+  },
+  "nv": {
+    "name": "Melanocytic Nevi (Common Mole)",
+    "category": "Benign Pigmented Lesion",
+    "severity": "Low - Normal Skin Feature",
+    "risk_level": "Low",
+    "description": "Common benign moles caused by clusters of melanocytes. Typically uniform in color, round or oval with smooth borders.",
+    "symptoms": ["Uniform brown or black color", "Distinct smooth borders", "Diameter usually under 6mm", "Stable over time"],
+    "immediate_advice": "Perform routine monthly self-exams using the ABCDE guidelines. Consult a doctor if the mole evolves."
+  },
+  "vasc": {
+    "name": "Vascular Lesion",
+    "category": "Benign Vascular Growth",
+    "severity": "Low - Usually Benign",
+    "risk_level": "Low",
+    "description": "Includes cherry angiomas, angiokeratomas, and vascular malformations originating from blood vessels.",
+    "symptoms": ["Bright red or purple macules/papules", "Blanches upon pressure", "Smooth or dome-shaped", "Usually painless"],
+    "immediate_advice": "Generally benign. Seek medical review if the lesion bleeds frequently or rapidly expands."
+  }
+}

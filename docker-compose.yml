@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: dermai-rag-app
+    ports:
+      - "5000:5000"
+    environment:
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - PORT=5000
+    volumes:
+      - ./medical_knowledge_db:/app/medical_knowledge_db
+      - ./chroma_db:/app/chroma_db
+      - ./uploads:/app/uploads
+      - ./models:/app/models
+    restart: unless-stopped

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Skin Disease Classification & Medical RAG System</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Vibrant Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="brand-title-wrap">
+                <span class="header-icon">🩺</span>
+                <div>
+                    <h1>AI Skin Disease Classification & Medical RAG System</h1>
+                    <p>Automated Skin Lesion Classification & Grounded Medical Assistant</p>
+                </div>
+            </div>
+            <div class="system-status-chip">
+                <span class="status-dot"></span> System Ready
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <!-- Section 1: Image Upload & Classification -->
+        <section class="card card-classifier">
+            <div class="card-title-bar">
+                <h2>Skin Disease Classification</h2>
+            </div>
+            
+            <div class="upload-box" id="dropzone">
+                <input type="file" id="file-input" accept="image/*" hidden>
+                
+                <div id="dropzone-prompt" class="dropzone-prompt-box">
+                    <div class="upload-badge">📷</div>
+                    <p>Drag & drop skin photo here or <button type="button" id="browse-btn" class="link-btn">select file</button></p>
+                    <span class="subtext">Supported formats: JPG, PNG, WEBP</span>
+                </div>
+                
+                <div id="preview-container" class="hidden">
+                    <img id="image-preview" src="" alt="Selected skin lesion preview">
+                </div>
+            </div>
+
+            <div class="button-row hidden" id="upload-controls">
+                <button type="button" id="btn-reset" class="btn btn-secondary">Clear Image</button>
+                <button type="button" id="btn-analyze" class="btn btn-primary">Analyze Image</button>
+            </div>
+
+            <!-- Results Display -->
+            <div id="results-dashboard" class="results-box hidden">
+                <div class="result-header">
+                    <div>
+                        <span class="result-tag">Predicted Diagnosis</span>
+                        <h3 id="predicted-name">Condition Name</h3>
+                        <p id="predicted-category" class="category-text"></p>
+                    </div>
+                    <span id="confidence-chip" class="confidence">0% Confidence</span>
+                </div>
+
+                <p id="predicted-desc" class="desc-text"></p>
+
+                <div class="section-block">
+                    <h4>Probability Breakdown</h4>
+                    <div id="prob-bars" class="prob-list"></div>
+                </div>
+
+                <div class="section-block advice-block">
+                    <h4>💊 Medical Treatment & Cure Plan</h4>
+                    <p id="immediate-advice-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Medical RAG Chat -->
+        <section class="card card-rag">
+            <div class="card-title-bar">
+                <h2>Medical RAG Assistant</h2>
+            </div>
+            <p class="section-desc">Ask follow-up questions about symptoms, cure options, and clinical protocols.</p>
+
+            <div id="chat-container" class="chat-box">
+                <div class="chat-item assistant">
+                    <span class="chat-avatar">⚕️</span>
+                    <div>
+                        <strong>Medical Assistant:</strong> Upload a skin photo above or ask any question about disease treatment plans.
+                    </div>
+                </div>
+            </div>
+
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="chat-input" placeholder="Type your medical question here..." autocomplete="off">
+                <button type="submit" class="btn btn-accent">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Disclaimer: Educational demonstration tool. Consult a board-certified dermatologist for clinical diagnosis.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

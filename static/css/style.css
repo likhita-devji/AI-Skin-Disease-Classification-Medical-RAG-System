@@ -1,0 +1,423 @@
+/* ==========================================================================
+   Vibrant & Colorful Medical Web Application Stylesheet
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    line-height: 1.5;
+    padding-bottom: 2.5rem;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* Vibrant Header Gradient */
+.header {
+    background: linear-gradient(135deg, #0284c7 0%, #2563eb 50%, #4f46e5 100%);
+    color: #ffffff;
+    padding: 1.75rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.header-icon {
+    font-size: 2.2rem;
+}
+
+.header h1 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.header p {
+    font-size: 0.85rem;
+    color: #e0f2fe;
+    margin-top: 0.2rem;
+}
+
+.system-status-chip {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #4ade80;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.4);
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+/* Vibrant Cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.05);
+}
+
+.card-classifier {
+    border-left: 5px solid #2563eb;
+}
+
+.card-rag {
+    border-left: 5px solid #0d9488;
+}
+
+.card-title-bar h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.35rem;
+}
+
+.section-desc {
+    font-size: 0.88rem;
+    color: #475569;
+    margin-bottom: 1rem;
+}
+
+/* Colorful Upload Zone */
+.upload-box {
+    border: 2px dashed #38bdf8;
+    border-radius: 10px;
+    padding: 2.25rem 1rem;
+    text-align: center;
+    background-color: #f0f9ff;
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+}
+
+.upload-box:hover {
+    background-color: #e0f2fe;
+    border-color: #0284c7;
+}
+
+.upload-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #e0f2fe;
+    color: #0284c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin: 0 auto 0.6rem auto;
+}
+
+.upload-box p {
+    font-size: 0.95rem;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    color: #2563eb;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.subtext {
+    display: block;
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 0.4rem;
+}
+
+/* Preview Box */
+#preview-container {
+    max-width: 100%;
+    max-height: 280px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+#preview-container img {
+    max-height: 280px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Buttons */
+.button-row {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.btn {
+    padding: 0.65rem 1.3rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+.btn-accent {
+    background: linear-gradient(135deg, #0d9488, #0f766e);
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(13, 148, 136, 0.3);
+}
+
+.btn-accent:hover {
+    background: linear-gradient(135deg, #0f766e, #115e59);
+}
+
+.btn-secondary {
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+}
+
+.btn-secondary:hover {
+    background-color: #e2e8f0;
+}
+
+/* Results Box */
+.results-box {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.result-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2563eb;
+    letter-spacing: 0.04em;
+}
+
+.result-header h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 0.1rem;
+}
+
+.category-text {
+    font-size: 0.85rem;
+    color: #0d9488;
+    margin-top: 0.15rem;
+    font-weight: 600;
+}
+
+.confidence {
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #86efac;
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+}
+
+.desc-text {
+    font-size: 0.9rem;
+    color: #334155;
+    margin-top: 0.6rem;
+    line-height: 1.5;
+}
+
+.section-block {
+    margin-top: 1.25rem;
+}
+
+.section-block h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.6rem;
+}
+
+/* Colorful Progress Bars */
+.prob-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.prob-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.83rem;
+}
+
+.prob-labels {
+    display: flex;
+    justify-content: space-between;
+    color: #334155;
+    font-weight: 600;
+}
+
+.prob-bar-bg {
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.prob-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+    border-radius: 4px;
+    transition: width 0.8s ease;
+}
+
+/* Colorful Clinical Advice Box */
+.advice-block {
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    padding: 1.1rem;
+    border-radius: 8px;
+}
+
+.advice-block h4 {
+    color: #047857;
+    margin-bottom: 0.35rem;
+}
+
+.advice-block p {
+    font-size: 0.88rem;
+    color: #065f46;
+    line-height: 1.5;
+}
+
+/* Colorful Chat Assistant Panel */
+.chat-box {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem;
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.chat-item {
+    font-size: 0.9rem;
+    padding: 0.75rem 0.95rem;
+    border-radius: 8px;
+    max-width: 90%;
+    line-height: 1.45;
+    display: flex;
+    gap: 0.6rem;
+}
+
+.chat-avatar {
+    font-size: 1.1rem;
+}
+
+.chat-item.assistant {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    align-self: flex-start;
+    color: #14532d;
+}
+
+.chat-item.user {
+    background-color: #e0f2fe;
+    border: 1px solid #bae6fd;
+    align-self: flex-end;
+    color: #0c4a6e;
+}
+
+.chat-form {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.chat-form input {
+    flex: 1;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.chat-form input:focus {
+    border-color: #0d9488;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}
+
+/* Footer */
+.footer {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.hidden {
+    display: none !important;
+}

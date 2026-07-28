@@ -1,0 +1,25 @@
+=== AI Skin Disease Classification & Medical RAG System ===
+
+Step 1: Install Dependencies
+-----------------------------
+pip install -r requirements.txt
+
+Step 2: (Optional) Download HAM10000 Dataset
+----------------------------------------------
+python download_dataset.py
+
+Step 3: (Optional) Fine-Tune EfficientNet CNN Model
+---------------------------------------------------
+python models/train_model.py --data_dir dataset/HAM10000 --epochs 10
+
+Step 4: Run Ollama Local LLM (Optional for Local RAG LLM)
+----------------------------------------------------------
+ollama run llama3
+
+Step 5: Launch Flask Backend & Web Application
+----------------------------------------------
+python app.py
+
+Step 6: Open Web App
+---------------------
+Access http://localhost:5000 in your web browser.

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+uploads/*
+!uploads/.gitkeep
+chroma_db/
+dataset/
+*.keras
+*.h5
+*.pt
+*.pth
+.DS_Store
