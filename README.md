@@ -16,13 +16,13 @@ The application utilizes a modular AI pipeline:
 - **RAG Pipeline**: Uses LangChain and ChromaDB to retrieve context from trusted medical PDFs.
 - **Inference Engine**: Generates safe, non-hallucinated responses via a local Ollama LLM.
 
-![AI Skin Disease Classification Medical RAG System Architecture](static/images/system_architecture_infographic.png)
+![AI Skin Disease Classification Medical RAG System Architecture](readme_images/system_architecture_infographic.png)
 
 ## 🔹 CNN Based Skin Disease Classification
-![CNN-Based Skin Disease Classification Flow](static/images/classification_flow_infographic.png)
+![CNN-Based Skin Disease Classification Flow](readme_images/classification_flow_infographic.png)
 
 ## 🔹 Medical RAG Pipeline Architecture
-![Medical RAG Pipeline Architecture](static/images/medical_rag_pipeline_infographic.png)
+![Medical RAG Pipeline Architecture](readme_images/medical_rag_pipeline_infographic.png)
 
 ---
 
@@ -70,16 +70,16 @@ The application utilizes a modular AI pipeline:
 │   ├── melanoma.md
 │   ├── basal_cell_carcinoma.md
 │   └── ...
+├── readme_images/                 # Infographic Diagrams for README
+│   ├── system_architecture_infographic.png
+│   ├── classification_flow_infographic.png
+│   └── medical_rag_pipeline_infographic.png
 ├── chroma_db/                     # Persistent Vector Store
 ├── uploads/                       # User Uploaded Images
 ├── templates/                     # Frontend UI (Jinja2)
-└── static/                        # CSS, JS, and Infographic Assets
+└── static/                        # CSS & JS Frontend Assets
     ├── css/style.css
-    ├── js/main.js
-    └── images/
-        ├── system_architecture_infographic.png
-        ├── classification_flow_infographic.png
-        └── medical_rag_pipeline_infographic.png
+    └── js/main.js
 ```
 
 ---
