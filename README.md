@@ -29,14 +29,26 @@ The application utilizes a modular AI pipeline:
 
 ## 🔹 Technology Stack
 
-| Layer | Technology | Role |
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-2.3-000000?style=for-the-badge&logo=flask&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.12+-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-0.1-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector_Store-FF4F00?style=for-the-badge&logo=databricks&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-black?style=for-the-badge&logo=ollama&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+| Architectural Layer | Technology & Libraries | Specialized Role & Description |
 | :--- | :--- | :--- |
-| **Backend** | Flask | API Orchestration & Routing |
-| **ML Model** | TensorFlow | CNN-based Image Classification (EfficientNetB0) |
-| **RAG Framework** | LangChain | Knowledge Retrieval Logic |
-| **Vector DB** | Chroma | Semantic Search & Embeddings |
-| **Containerization** | Docker | Environment Isolation & Portability |
-| **LLM** | Ollama | Local Inference (LlamaMedicine) |
+| **Frontend UI** | HTML5, CSS3, JavaScript (ES6+) | Glassmorphic Dashboard, Drag-and-Drop Image Uploader, Dynamic Medical RAG Modal & Micro-animations |
+| **Backend REST API** | Flask, Flask-CORS | Asynchronous API Services, Request Routing, File Upload Processing & Pipeline Orchestration |
+| **Deep Learning & CV** | TensorFlow, Keras, OpenCV, PIL | EfficientNetB0 Transfer Learning CNN for high-accuracy skin disease image classification |
+| **RAG Pipeline Engine** | LangChain, PyPDF, Markdown | Medical document parsing, recursive text splitting, prompt engineering & context synthesis |
+| **Vector Embeddings** | Sentence-Transformers (`all-MiniLM-L6-v2`) | High-dimensional dense semantic embedding generation for clinical literature |
+| **Vector Database** | ChromaDB | Persistent HNSW indexing, similarity search & top-K context retrieval |
+| **LLM & Local Inference** | Ollama (`llama3` / `llama-medicine`) | Local privacy-preserving LLM inference + Grounded Fallback Synthesis Engine with treatment protocols |
+| **Data Science & Metrics** | Pandas, NumPy, Scikit-Learn | HAM10000 dataset preprocessing, class weight calculation, confusion matrices & model evaluation |
+| **DevOps & Containerization**| Docker, Docker Compose | Microservice isolation, cross-platform portability, persistent volume mounts & host network bridging |
 
 ---
 
